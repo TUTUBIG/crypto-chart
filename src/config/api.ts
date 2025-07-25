@@ -1,7 +1,7 @@
 // API Configuration
 export const API_CONFIG = {
   // Base URL for API requests
-  BASE_URL: import.meta.env.VITE_API_BASE_URL || 'https://crypto-pump.bigtutu.workers.dev',
+  BASE_URL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8787',
   
   // API Endpoints
   ENDPOINTS: {
@@ -12,7 +12,7 @@ export const API_CONFIG = {
     SINGLE_CANDLE: '/single-candle',
     
     // WebSocket endpoint for real-time data
-    WEBSOCKET: import.meta.env.VITE_WEBSOCKET_URL || 'wss://crypto-pump.bigtutu.workers.dev/ws',
+    WEBSOCKET: import.meta.env.VITE_WEBSOCKET_URL || 'ws://localhost:8787/ws',
   },
   
   // Request timeouts (in milliseconds)
