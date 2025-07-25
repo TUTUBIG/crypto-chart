@@ -1,0 +1,248 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.app-main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.chart-layout {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.chart-section {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.trades-section {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.trades-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.trades-description {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.trades-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.trade-item-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #e9ecef;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #495057;
+}
+
+.trades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.no-trades {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.no-trades p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+.widget-section {
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.widget-section h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.widget-description {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-section ul {
+  margin: 0 0 24px 0;
+  padding-left: 20px;
+}
+
+.info-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.info-section code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  color: #e83e8c;
+}
+
+.data-structure {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.data-structure h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.data-structure pre {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.data-structure pre:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app {
+    padding: 16px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  .widget-section,
+  .info-section {
+    padding: 16px;
+  }
+  
+  .widget-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .info-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .widget-section,
+  .info-section {
+    background: #1a1a1a;
+    color: #fff;
+  }
+  
+  .widget-section h2,
+  .info-section h3,
+  .data-structure h4 {
+    color: #fff;
+  }
+  
+  .info-section li {
+    color: #ccc;
+  }
+  
+  .info-section code {
+    background: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .data-structure {
+    background: #2d3748;
+  }
+} 
